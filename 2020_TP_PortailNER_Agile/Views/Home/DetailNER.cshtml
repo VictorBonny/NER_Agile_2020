@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Nouvelles énergies renouvelables";
+}
+@Html.MvcSiteMap().SiteMapPath()
+
+
+<div class="row">
+    <div class="col-md-3">
+        <input type="button" class="btn btn-info" value="PV" onclick="location.href='@Url.Action("PV", "NER")'" />
+    </div>
+    <div class="col-md-3">
+        <input type="button" class="btn btn-info" value="MINI-HYDR." onclick="location.href='@Url.Action("MiniHydr", "NER")'" />
+    </div>
+    <div class="col-md-3">
+        <input type="button" class="btn btn-info" value="EOLIEN" onclick="location.href='@Url.Action("Eolien", "NER")'" />
+    </div>
+    <div class="col-md-3">
+        <input type="button" class="btn btn-info" value="BIO-GAZ" onclick="location.href='@Url.Action("BioGaz", "NER")'" />
+    </div>
+</div>
+
+
